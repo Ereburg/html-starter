@@ -25,8 +25,10 @@ $.gulp.task(
   'dev',
   $.gulp.series(
     $.gulp.parallel('clean'),
-    $.gulp.parallel('hbs', 'styles', 'scripts', 'scripts:libs', 'hbs', 'svg', 'svgInline', 'pngSprite'),
+    $.gulp.parallel('styles', 'scripts:libs', 'scripts'),
+    $.gulp.parallel('hbs', 'svg', 'svgInline', 'pngSprite', 'static:fonts', 'static:images'),
     $.gulp.parallel('prepareHtmlDev'),
+    $.gulp.parallel('content'),
     $.gulp.parallel('watch', 'serve'),
   ),
 )
