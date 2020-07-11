@@ -1,6 +1,6 @@
 {
   "appName": "APP_NAME",
-  "siteName": "Site name",
+  "siteName": "OZiTAG Build Template",
   "siteUrl": "#",
   "metaPath": ".meta",
   "sourcePath": "app",
@@ -17,7 +17,7 @@
   "hbsPath": "templates",
   "stylesPath": "css",
   "scriptsPath": "js",
-  "dynamicEntry": true,
+  "dynamicEntry": false,
   "jsMin": true,
   "cssMin": true,
   "imageMin": true,
